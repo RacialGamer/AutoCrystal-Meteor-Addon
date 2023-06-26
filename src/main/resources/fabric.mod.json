@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "addon-autocrystal",
+  "version": "${version}",
+  "name": "Autocrystal Meteor Addon",
+  "description": "An addon thats adds autocrystal to Meteor",
+  "authors": [
+    "RacialGamer"
+  ],
+  "contact": {
+    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "racialgamer.cheese.autocrystal.Addon"
+    ]
+  },
+  "mixins": [
+    "addon-autocrystal.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${mc_version}",
+    "meteor-client": "*"
+  }
+}
